@@ -1,0 +1,57 @@
+﻿h1,h2,h3,h4,h5,h6{
+    margin:0;padding:0;
+}
+body {
+    font-family:Calibri;
+}
+.panelContainer {
+    width: 350px;
+    border: 1px solid #012E40;
+   /* background-color: #F2E3D5;*/
+    min-height:200px;
+    border-radius:10px;
+    margin:300px auto;
+}
+.panelheader {
+    background-color: #f3f3f3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid Silver;
+    text-align: center;
+    padding: 10px;
+}
+.panelContent
+{
+    padding:20px;
+}
+.row
+{
+    padding-bottom:10px;
+}
+.inputbox {
+    width: 300px;
+    padding: 7px;
+    border: 1px solid #024959;
+    border-radius:5px;
+}
+.girisButton {
+    width: 315px;
+    padding: 7px;
+    background-color: #026773;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #024959;
+}
+    .girisButton:hover {
+        background-color: #3CA6A6;
+        color: #012E40;
+        cursor:pointer;
+    }
+    .Deep-Teal-Sea-1-hex {
+        color: #012E40;
+    }
+.Deep-Teal-Sea-2-hex { color: #024959; }
+.Deep-Teal-Sea-3-hex { color: #026773; }
+.Deep-Teal-Sea-4-hex { color: #3CA6A6; }
+.Deep-Teal-Sea-5-hex { color: #F2E3D5; }
+
