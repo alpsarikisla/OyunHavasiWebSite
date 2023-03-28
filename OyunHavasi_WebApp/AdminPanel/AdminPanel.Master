@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPanel.master.cs" Inherits="OyunHavasi_WebApp.AdminPanel.AdminPanel" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="assets/css/MainStyle.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <h3 class="logo">Oyun Havası Yönetim Paneli</h3>
+            <asp:LinkButton ID="lbtn_cikis" runat="server" CssClass="exitButton">Çıkış</asp:LinkButton>
+             <asp:Label ID="lbl_kullanici" runat="server" CssClass="userName">Kullanıcı Adı</asp:Label>
+        </div>
+        <div></div>
+      <div class="sidemenu">
+          <ul class="menu">
+              <a href="Default.aspx"><li>
+                  <img src="assets/SiteImages/216242_home_icon.png" />Anasayfa</li></a>
+              <a href="#"><li>
+                  <img src="assets/SiteImages/9055248_bxs_category_alt_icon.png" />Kategori Ekle</li></a>
+              <a href="#"><li>
+                  <img src="assets/SiteImages/9055248_bxs_category_alt_icon.png" />Kategori Listele</li></a>
+              <a href="#"><li>
+                  <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Ekle</li></a>
+              <a href="#"><li>
+                  <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Listele</li></a>
+              <a href="#"><li>
+                  <img src="assets/SiteImages/1564513_comment_message_voice_icon.png" />Yorum İşlemleri</li></a>
+              <a href="#"><li>
+                  <img src="assets/SiteImages/352174_user_icon.png" />Üye İşlemleri</li></a>
+              <a href="#"><li>
+                  <img src="assets/SiteImages/3669250_settings_ic_icon.png" />Admin İşlemleri</li></a>
+          </ul>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="clear:both"></div>
+    </form>
+</body>
+</html>

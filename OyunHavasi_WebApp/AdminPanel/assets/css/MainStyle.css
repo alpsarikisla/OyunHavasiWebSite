@@ -1,0 +1,67 @@
+﻿*,h1,h2,h3,h4,h5,h6
+{
+    margin:0; padding:0px;
+}
+body {
+    font-family:Calibri;
+}
+.header {
+    height: 30px;
+    background-color: #012E40;
+    color: #F2E3D5;
+    padding:15px 5px;
+}
+.logo
+{
+    float:left;
+}
+.userName
+{
+    float:right
+}
+.exitButton {
+    float: right;
+    color: #F2E3D5;
+    text-decoration:none;
+    padding:0px 20px;
+}
+    .exitButton:hover {
+        color: white;
+        text-decoration:underline;
+    }
+.sidemenu {
+    width: 210px;
+    height: 100vh;
+    padding: 15px 0px;
+    background-color: #F2E3D5;
+    float: left;
+   
+}
+.container {
+    float: left;
+    width: 1000px;
+    padding: 20px;
+    border-left: 1px solid #012E40;
+    height: 100vh;
+}
+.menu
+{
+    list-style-type:none;
+}
+    .menu a
+    {
+        text-decoration:none;
+    }
+    .menu li img
+    {
+        width:12px;
+        margin:0px 10px;
+    }
+    .menu li {
+        color: #012E40;
+        padding: 5px;
+        border-bottom: 1px solid silver;
+    }
+    .menu li:hover {
+       background-color:silver;
+    }

@@ -69,6 +69,14 @@
   <ItemGroup>
     <Content Include="AdminPanel\AdminGiris.aspx" />
     <Content Include="AdminPanel\assets\css\adminGiris.css" />
+    <Content Include="AdminPanel\assets\css\MainStyle.css" />
+    <Content Include="AdminPanel\assets\SiteImages\1564513_comment_message_voice_icon.png" />
+    <Content Include="AdminPanel\assets\SiteImages\216242_home_icon.png" />
+    <Content Include="AdminPanel\assets\SiteImages\352174_user_icon.png" />
+    <Content Include="AdminPanel\assets\SiteImages\352285_content_copy_icon.png" />
+    <Content Include="AdminPanel\assets\SiteImages\3669250_settings_ic_icon.png" />
+    <Content Include="AdminPanel\assets\SiteImages\9055248_bxs_category_alt_icon.png" />
+    <Content Include="AdminPanel\Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,9 +87,24 @@
     <Compile Include="AdminPanel\AdminGiris.aspx.designer.cs">
       <DependentUpon>AdminGiris.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanel\AdminPanel.Master.cs">
+      <DependentUpon>AdminPanel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminPanel.Master.designer.cs">
+      <DependentUpon>AdminPanel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPanel\AdminPanel.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
