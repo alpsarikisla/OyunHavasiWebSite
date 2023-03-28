@@ -116,3 +116,5 @@ C:\Users\303\Documents\GitHub\OyunHavasiWebSite\OyunHavasi_WebApp\obj\Debug\Oyun
 C:\Users\303\Documents\GitHub\OyunHavasiWebSite\OyunHavasi_WebApp\obj\Debug\OyunHavasi_WebApp.csproj.CopyComplete
 C:\Users\303\Documents\GitHub\OyunHavasiWebSite\OyunHavasi_WebApp\obj\Debug\OyunHavasi_WebApp.dll
 C:\Users\303\Documents\GitHub\OyunHavasiWebSite\OyunHavasi_WebApp\obj\Debug\OyunHavasi_WebApp.pdb
+C:\Users\303\Documents\GitHub\OyunHavasiWebSite\OyunHavasi_WebApp\bin\DataAccessLayer.dll
+C:\Users\303\Documents\GitHub\OyunHavasiWebSite\OyunHavasi_WebApp\bin\DataAccessLayer.pdb

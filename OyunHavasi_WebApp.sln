@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OyunHavasi_WebApp", "OyunHavasi_WebApp\OyunHavasi_WebApp.csproj", "{52D947FD-3193-468E-AA80-26DF8416E99F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{CE9F740D-57E2-4FB1-AB82-A78DBA67E334}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{52D947FD-3193-468E-AA80-26DF8416E99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52D947FD-3193-468E-AA80-26DF8416E99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52D947FD-3193-468E-AA80-26DF8416E99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE9F740D-57E2-4FB1-AB82-A78DBA67E334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE9F740D-57E2-4FB1-AB82-A78DBA67E334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE9F740D-57E2-4FB1-AB82-A78DBA67E334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE9F740D-57E2-4FB1-AB82-A78DBA67E334}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

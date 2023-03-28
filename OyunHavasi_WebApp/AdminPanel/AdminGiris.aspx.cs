@@ -4,15 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DataAccessLayer;
 
 namespace OyunHavasi_WebApp.AdminPanel
 {
     public partial class AdminGiris : System.Web.UI.Page
     {
+        DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.Title = "Nabünüz Len";
-            tb_kullaniciAdi.Text = "Murtazaaa";
+           
+            
         }
 
         protected void btn_giris_Click(object sender, EventArgs e)
@@ -20,14 +22,23 @@ namespace OyunHavasi_WebApp.AdminPanel
             string kadi = tb_kullaniciAdi.Text;
             string sifre = tb_sifre.Text;
 
-            if (kadi == "Admin" && sifre == "1234")
+            Yonetici y = dm.YoneticiGiris(kadi, sifre);
+            if (y!= null)
             {
-                this.Title = "Giriş Başarılı";
+                if (y.Durum)
+                {
+                    Response.Redirect("Default.aspx");
+                }
+                else
+                {
+                    lbl_mesaj.Text = "Hesabınız sistem yöneticisi tarafından askıya alınmıştır";
+                }
             }
             else
             {
-                this.Title = "Kullanıcı Adı Veya Şİfre Hatalı";
+                lbl_mesaj.Text = "Giriş bilgileri hatalı veya kullanıcı bulunamadı";
             }
+           
         }
     }
 }
