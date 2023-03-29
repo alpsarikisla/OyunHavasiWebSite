@@ -23,10 +23,12 @@ namespace OyunHavasi_WebApp.AdminPanel
             string sifre = tb_sifre.Text;
 
             Yonetici y = dm.YoneticiGiris(kadi, sifre);
+           
             if (y!= null)
             {
                 if (y.Durum)
                 {
+                    Session["yonetici"] = y;//BOXING
                     Response.Redirect("Default.aspx");
                 }
                 else

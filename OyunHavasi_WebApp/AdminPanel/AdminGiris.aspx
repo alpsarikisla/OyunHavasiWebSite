@@ -16,10 +16,10 @@
             <div class="panelContent">
               
                 <div class="row">
-                    <asp:TextBox ID="tb_kullaniciAdi" runat="server" CssClass="inputbox" placeholder="Kullanıcı Adı"></asp:TextBox>
+                    <asp:TextBox ID="tb_kullaniciAdi" runat="server" CssClass="inputbox" placeholder="Kullanıcı Adı" Text="JoDo"></asp:TextBox>
                 </div>
                 <div class="row">
-                    <asp:TextBox ID="tb_sifre" runat="server" TextMode="Password" CssClass="inputbox" placeholder="Şifre"></asp:TextBox>
+                    <asp:TextBox ID="tb_sifre" runat="server"  CssClass="inputbox" placeholder="Şifre" Text="1234"></asp:TextBox>
                 </div>
                 <div>
                     <asp:Button ID="btn_giris" runat="server" CssClass="girisButton" Text="Giriş Yap" OnClick="btn_giris_Click" />

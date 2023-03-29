@@ -1,0 +1,102 @@
+﻿.formTitle {
+    background-color: #f3f3f3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid Silver;
+    text-align: center;
+    padding: 10px;
+}
+
+.formContent {
+    padding: 20px;
+    border: 1px solid Silver;
+    border-top:none;
+    min-height:600px;
+}
+
+.row {
+    padding-bottom: 20px;
+}
+
+.inputbox {
+    width: 98%;
+    padding: 7px;
+    border: 1px solid #024959;
+    border-radius: 5px;
+    margin-top:10px;
+}
+.formButton {
+    width: 315px;
+    padding: 7px 25px;
+    background-color: #026773;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #024959;
+    text-decoration:none;
+}
+
+    .formButton:hover {
+        background-color: #3CA6A6;
+        color: #012E40;
+        cursor: pointer;
+    }
+.pnl_basarili {
+    padding: 20px;
+    background-color: #45948f;
+    border: 1px solid #012E40;
+    color: white;
+    border-radius: 5px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pnl_basarisiz {
+    padding: 20px;
+    background-color: #be7272;
+    border: 1px solid #3c0202;
+    color: white;
+    border-radius: 5px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formTable
+{
+    width:100%;
+    border:1px solid silver;
+}
+.formTable th
+{
+    padding:10px;
+    background-color:#dedede;
+}
+    .formTable td {
+        padding: 10px;
+        border-bottom:1px solid silver;
+        text-align:center;
+    }
+    .formTable .alternate td
+    {
+        background-color:#f5f5f5;
+    }
+    .formTable .btn_duzenle {
+        padding: 5px 10px;
+        color: white;
+        background-color: #012E40;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+        .formTable .btn_duzenle:hover {
+            background-color: #024959;
+        }
+        .formTable .btn_sil {
+            padding: 5px 10px;
+            color: white;
+            background-color: #be7272;
+            border-radius: 3px;
+            text-decoration:none;
+        }
+    .formTable .btn_sil:hover{
+        background-color:#c15151;
+    }
+           

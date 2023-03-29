@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="AdminPanel\AdminGiris.aspx" />
     <Content Include="AdminPanel\assets\css\adminGiris.css" />
+    <Content Include="AdminPanel\assets\css\FormStyle.css" />
     <Content Include="AdminPanel\assets\css\MainStyle.css" />
     <Content Include="AdminPanel\assets\SiteImages\1564513_comment_message_voice_icon.png" />
     <Content Include="AdminPanel\assets\SiteImages\216242_home_icon.png" />
@@ -77,6 +78,9 @@
     <Content Include="AdminPanel\assets\SiteImages\3669250_settings_ic_icon.png" />
     <Content Include="AdminPanel\assets\SiteImages\9055248_bxs_category_alt_icon.png" />
     <Content Include="AdminPanel\Default.aspx" />
+    <Content Include="AdminPanel\KategoriEkle.aspx" />
+    <Content Include="AdminPanel\KategoriListeleGridView.aspx" />
+    <Content Include="AdminPanel\KategoriListeleListView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +104,27 @@
     </Compile>
     <Compile Include="AdminPanel\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriEkle.aspx.cs">
+      <DependentUpon>KategoriEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriEkle.aspx.designer.cs">
+      <DependentUpon>KategoriEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriListeleGridView.aspx.cs">
+      <DependentUpon>KategoriListeleGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriListeleGridView.aspx.designer.cs">
+      <DependentUpon>KategoriListeleGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriListeleListView.aspx.cs">
+      <DependentUpon>KategoriListeleListView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriListeleListView.aspx.designer.cs">
+      <DependentUpon>KategoriListeleListView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
