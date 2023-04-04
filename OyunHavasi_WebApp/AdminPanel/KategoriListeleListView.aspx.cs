@@ -16,5 +16,14 @@ namespace OyunHavasi_WebApp.AdminPanel
             lv_kategoriler.DataSource = dm.KategoriListele();
             lv_kategoriler.DataBind();
         }
+
+        protected void lv_kategoriler_ItemCommand(object sender, ListViewCommandEventArgs e)
+        {
+            //sender itemCommand event'ını tetikleyen kontrol
+            int id = Convert.ToInt32(e.CommandArgument);
+            dm.KategoriSil(id);
+            lv_kategoriler.DataSource = dm.KategoriListele();
+            lv_kategoriler.DataBind();
+        }
     }
 }

@@ -7,7 +7,7 @@
     <div>
         <h2>Kategori Listesi</h2>
         <hr style="margin:20px 0px"/>
-        <asp:ListView ID="lv_kategoriler" runat="server">
+        <asp:ListView ID="lv_kategoriler" runat="server" OnItemCommand="lv_kategoriler_ItemCommand">
             <LayoutTemplate>
                 <table class="formTable" cellspacing="0" cellpadding="0">
                     <tr>
@@ -23,8 +23,8 @@
                     <td><%# Eval("ID") %></td>
                     <td><%# Eval("Isim") %></td>
                     <td>
-                        <a href="" class="btn_duzenle">Düzenle</a>
-                        <a href="" class="btn_sil">Sil</a>
+                        <a href='KategoriDuzenle.aspx?kategoriid=<%# Eval("ID") %>' class="btn_duzenle">Düzenle</a>
+                        <asp:LinkButton ID="lbtn_sil" runat="server" class="btn_sil" CommandArgument='<%# Eval("ID") %>'>Sil</asp:LinkButton>
                     </td>
                 </tr>
             </ItemTemplate>
@@ -33,8 +33,8 @@
                     <td><%# Eval("ID") %></td>
                     <td><%# Eval("Isim") %></td>
                     <td>
-                        <a href="" class="btn_duzenle">Düzenle</a>
-                        <a href="" class="btn_sil">Sil</a>
+                        <a href='KategoriDuzenle.aspx?kategoriid=<%# Eval("ID") %>' class="btn_duzenle">Düzenle</a>
+                        <asp:LinkButton ID="lbtn_sil" runat="server" class="btn_sil" CommandArgument='<%# Eval("ID") %>'>Sil</asp:LinkButton>
                     </td>
                 </tr>
             </AlternatingItemTemplate>

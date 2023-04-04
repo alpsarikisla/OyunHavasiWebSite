@@ -78,9 +78,11 @@
     <Content Include="AdminPanel\assets\SiteImages\3669250_settings_ic_icon.png" />
     <Content Include="AdminPanel\assets\SiteImages\9055248_bxs_category_alt_icon.png" />
     <Content Include="AdminPanel\Default.aspx" />
+    <Content Include="AdminPanel\KategoriDuzenle.aspx" />
     <Content Include="AdminPanel\KategoriEkle.aspx" />
     <Content Include="AdminPanel\KategoriListeleGridView.aspx" />
     <Content Include="AdminPanel\KategoriListeleListView.aspx" />
+    <Content Include="AdminPanel\MakaleEkle.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +107,13 @@
     <Compile Include="AdminPanel\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanel\KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPanel\KategoriEkle.aspx.cs">
       <DependentUpon>KategoriEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -125,6 +134,13 @@
     </Compile>
     <Compile Include="AdminPanel\KategoriListeleListView.aspx.designer.cs">
       <DependentUpon>KategoriListeleListView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\MakaleEkle.aspx.cs">
+      <DependentUpon>MakaleEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\MakaleEkle.aspx.designer.cs">
+      <DependentUpon>MakaleEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

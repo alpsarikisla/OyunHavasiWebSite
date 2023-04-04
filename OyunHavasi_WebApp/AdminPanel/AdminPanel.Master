@@ -28,7 +28,7 @@
                   <img src="assets/SiteImages/9055248_bxs_category_alt_icon.png" />Kategori Listele Grid View</li></a>
                <a href="KategoriListeleListView.aspx"><li>
                   <img src="assets/SiteImages/9055248_bxs_category_alt_icon.png" />Kategori Listele List View</li></a>
-              <a href="#"><li>
+              <a href="MakaleEkle.aspx"><li>
                   <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Ekle</li></a>
               <a href="#"><li>
                   <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Listele</li></a>
@@ -45,6 +45,9 @@
             </asp:ContentPlaceHolder>
         </div>
         <div style="clear:both"></div>
+         <script>
+             CKEDITOR.replace('ContentPlaceHolder1_tb_icerik' );
+         </script>
     </form>
 </body>
 </html>

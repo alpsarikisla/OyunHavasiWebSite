@@ -117,6 +117,106 @@ namespace DataAccessLayer
             }
         }
 
+        public Kategori KategoriGetir(int id)
+        {
+            Kategori k = new Kategori();
+            try
+            {
+                cmd.CommandText = "SELECT ID, Isim FROM Kategoriler WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    k.ID = reader.GetInt32(0);
+                    k.Isim = reader.GetString(1);
+                }
+                return k;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool KategoriDuzenle(Kategori kat)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Kategoriler SET Isim = @i WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", kat.ID);
+                cmd.Parameters.AddWithValue("@i", kat.Isim);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public void KategoriSil(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE FROM Kategoriler WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        #endregion
+
+        #region Makale Metotları
+
+        public bool MakaleEkle(Makale mak)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Makaleler (Kategori_ID, Yazar_ID, Baslik, Ozet, Icerik, KapakResim, BegeniSayi, GoruntulemeSayi, YayinDurum, Silinmis,EklemeTarih) VALUES(@kategori_ID, @yazar_ID, @baslik, @ozet, @icerik, @kapakResim, @begeniSayi, @goruntulemeSayi, @yayinDurum, @silinmis, @eklemeTarih)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@kategori_ID", mak.Kategori_ID);
+                cmd.Parameters.AddWithValue("@yazar_ID", mak.Yazar_ID);
+                cmd.Parameters.AddWithValue("@baslik", mak.Baslik);
+                cmd.Parameters.AddWithValue("@ozet", mak.Ozet);
+                cmd.Parameters.AddWithValue("@icerik", mak.Icerik);
+                cmd.Parameters.AddWithValue("@kapakResim", mak.KapakResim);
+                cmd.Parameters.AddWithValue("@begeniSayi", mak.BegeniSayi);
+                cmd.Parameters.AddWithValue("@goruntulemeSayi", mak.GoruntulemeSayi);
+                cmd.Parameters.AddWithValue("@yayinDurum", mak.YayinDurumu);
+                cmd.Parameters.AddWithValue("@silinmis", mak.Silinmis);
+                cmd.Parameters.AddWithValue("@eklemeTarih", mak.EklemeTarih);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         #endregion
     }
 }

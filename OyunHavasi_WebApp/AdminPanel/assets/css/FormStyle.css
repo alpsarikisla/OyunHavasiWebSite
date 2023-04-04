@@ -99,4 +99,8 @@
     .formTable .btn_sil:hover{
         background-color:#c15151;
     }
+.halfcontent {
+    width: 600px;
+    float: left;
+}
            
