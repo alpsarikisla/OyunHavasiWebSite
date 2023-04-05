@@ -1,8 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminPanel/AdminPanel.Master" AutoEventWireup="true" CodeBehind="MakaleEkle.aspx.cs" Inherits="OyunHavasi_WebApp.AdminPanel.MakaleEkle" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminPanel/AdminPanel.Master" AutoEventWireup="true" CodeBehind="MakaleEkle.aspx.cs" Inherits="OyunHavasi_WebApp.AdminPanel.MakaleEkle" ValidateRequest="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="assets/css/FormStyle.css" rel="stylesheet" />
-    <link href="assets/ckeditor/contents.css" rel="stylesheet" />
     <script src="assets/ckeditor/ckeditor.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -12,7 +11,7 @@
         </div>
         <div class="formContent">
             <asp:Panel ID="pnl_basarili" runat="server" CssClass="pnl_basarili" Visible="false">
-                <marquee>Makale Ekleme Başarılı</marquee>
+               Makale Ekleme Başarılı
             </asp:Panel>
             <asp:Panel ID="pnl_basarisiz" runat="server" CssClass="pnl_basarisiz" Visible="false">
                 <asp:Label ID="lbl_mesaj" runat="server"></asp:Label>
@@ -43,7 +42,6 @@
                 </div>
             </div>
             <div class="halfcontent" style="margin-left:30px;">
-               
                  <div class="row">
                     <label>Makale İçeriği</label><br />
                     <asp:TextBox ID="tb_icerik" runat="server" CssClass="inputbox" TextMode="MultiLine"></asp:TextBox>

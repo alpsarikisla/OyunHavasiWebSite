@@ -394,6 +394,8 @@
     <Content Include="AdminPanel\KategoriListeleGridView.aspx" />
     <Content Include="AdminPanel\KategoriListeleListView.aspx" />
     <Content Include="AdminPanel\MakaleEkle.aspx" />
+    <Content Include="AdminPanel\MakaleListele.aspx" />
+    <Content Include="MakaleResimleri\none.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -452,6 +454,13 @@
     </Compile>
     <Compile Include="AdminPanel\MakaleEkle.aspx.designer.cs">
       <DependentUpon>MakaleEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\MakaleListele.aspx.cs">
+      <DependentUpon>MakaleListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\MakaleListele.aspx.designer.cs">
+      <DependentUpon>MakaleListele.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

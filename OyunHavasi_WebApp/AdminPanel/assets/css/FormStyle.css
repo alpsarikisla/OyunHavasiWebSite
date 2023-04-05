@@ -86,9 +86,10 @@
         border-radius: 3px;
         text-decoration: none;
     }
-        .formTable .btn_duzenle:hover {
-            background-color: #024959;
-        }
+    
+    .formTable .btn_duzenle:hover {
+        background-color: #024959;
+    }
         .formTable .btn_sil {
             padding: 5px 10px;
             color: white;
@@ -99,8 +100,30 @@
     .formTable .btn_sil:hover{
         background-color:#c15151;
     }
+    .formTable .lbtn_durumDegistir {
+        padding: 5px 10px;
+        color: white;
+        background-color: #026773;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+        .formTable .lbtn_durumDegistir:hover {
+            background-color: #012E40;
+        }
 .halfcontent {
     width: 600px;
     float: left;
+}
+.yayinda
+{
+    padding:5px 15px;
+    color:white;
+    border-radius:3px;
+    background-color:#026773;
+}
+.yayindadegil {
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: Silver;
 }
            

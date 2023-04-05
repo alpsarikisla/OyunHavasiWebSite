@@ -30,7 +30,7 @@
                   <img src="assets/SiteImages/9055248_bxs_category_alt_icon.png" />Kategori Listele List View</li></a>
               <a href="MakaleEkle.aspx"><li>
                   <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Ekle</li></a>
-              <a href="#"><li>
+              <a href="MakaleListele.aspx"><li>
                   <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Listele</li></a>
               <a href="#"><li>
                   <img src="assets/SiteImages/1564513_comment_message_voice_icon.png" />Yorum İşlemleri</li></a>
