@@ -32,8 +32,10 @@
                   <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Ekle</li></a>
               <a href="MakaleListele.aspx"><li>
                   <img src="assets/SiteImages/352285_content_copy_icon.png" />Makale Listele</li></a>
-              <a href="#"><li>
-                  <img src="assets/SiteImages/1564513_comment_message_voice_icon.png" />Yorum İşlemleri</li></a>
+              <a href="YorumOnayla.aspx"><li>
+                  <img src="assets/SiteImages/1564513_comment_message_voice_icon.png" />Onay Bekleyen Yorumlar</li></a>
+              <a href="TumYorumlar.aspx"><li>
+                  <img src="assets/SiteImages/1564513_comment_message_voice_icon.png" />Tüm Yorumlar</li></a>
               <a href="#"><li>
                   <img src="assets/SiteImages/352174_user_icon.png" />Üye İşlemleri</li></a>
               <a href="#"><li>

@@ -395,7 +395,19 @@
     <Content Include="AdminPanel\KategoriListeleListView.aspx" />
     <Content Include="AdminPanel\MakaleEkle.aspx" />
     <Content Include="AdminPanel\MakaleListele.aspx" />
+    <Content Include="AdminPanel\TumYorumlar.aspx" />
+    <Content Include="AdminPanel\YorumOnayla.aspx" />
+    <Content Include="Assets\css\Hasan.css" />
+    <Content Include="Assets\Resimler\300x250.gif" />
+    <Content Include="Assets\Resimler\3274408.jpg" />
+    <Content Include="Assets\Resimler\3326663.jpg" />
+    <Content Include="Assets\Resimler\6056206.jpg" />
+    <Content Include="Assets\Resimler\logo.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="MakaleDetay.aspx" />
     <Content Include="MakaleResimleri\none.png" />
+    <Content Include="UyeGiris.aspx" />
+    <Content Include="UyeKayit.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -462,7 +474,56 @@
     <Compile Include="AdminPanel\MakaleListele.aspx.designer.cs">
       <DependentUpon>MakaleListele.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanel\TumYorumlar.aspx.cs">
+      <DependentUpon>TumYorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\TumYorumlar.aspx.designer.cs">
+      <DependentUpon>TumYorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\YorumOnayla.aspx.cs">
+      <DependentUpon>YorumOnayla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\YorumOnayla.aspx.designer.cs">
+      <DependentUpon>YorumOnayla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakaleDetay.aspx.cs">
+      <DependentUpon>MakaleDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakaleDetay.aspx.designer.cs">
+      <DependentUpon>MakaleDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UyeGiris.aspx.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyeGiris.aspx.designer.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UyeKayit.aspx.cs">
+      <DependentUpon>UyeKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyeKayit.aspx.designer.cs">
+      <DependentUpon>UyeKayit.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPanel\AdminPanel.Master" />
@@ -482,6 +543,7 @@
     <Content Include="AdminPanel\assets\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="AdminPanel\assets\ckeditor\SECURITY.md" />
     <Content Include="AdminPanel\assets\ckeditor\skins\moono-lisa\readme.md" />
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -496,6 +558,7 @@
       <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

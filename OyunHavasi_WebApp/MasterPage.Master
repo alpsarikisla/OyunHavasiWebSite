@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="OyunHavasi_WebApp.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Assets/css/Hasan.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="ustMenu">
+            <div class="container">
+                <a href="http://www.facebook.com" class="uyeOlGirisYap">f</a>
+                <a href="http://www.facebook.com" class="uyeOlGirisYap">in</a>
+                <span class="uyeOlGirisYap">|</span>
+                <asp:Panel ID="pnl_girisVar" runat="server" Visible="false">
+                    <a href="#" class="uyeOlGirisYap">
+                        <asp:Literal ID="ltrl_kullanici" runat="server"></asp:Literal></a>
+                    <asp:LinkButton ID="lbtn_cikis" runat="server" OnClick="lbtn_cikis_Click" class="uyeOlGirisYap">Güvenli Çıkış</asp:LinkButton>
+                </asp:Panel>
+                <asp:Panel ID="pnl_girisyok" runat="server">
+                    <a href="UyeKayit.aspx" class="uyeOlGirisYap">Üye Ol</a>
+                    <a href="UyeGiris.aspx" class="uyeOlGirisYap">Giriş Yap</a>
+                </asp:Panel>
+
+            </div>
+        </div>
+        <div class="menu">
+            <div class="container">
+                <a href="Default.aspx">
+                    <img src="Assets/Resimler/logo.png" class="logo" />
+                    <h1 class="logotext">Oyun Havası <small>Kol Bozuk</small></h1>
+                </a>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="sideBar">
+                <a href="http://www.turhost.com/r/104820">
+                    <img src="Assets/Resimler/300x250.gif" />
+                </a>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
